@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Lab02.3 - HTML + CSS + JS</title>
+</head>
+<style>
+
+.left-side{
+float: left; 
+margin-right: 30px;
+}
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 5px;
+}
+
+.right-side tr span{
+padding-right:100px;
+}
+
+
+.right-side tr:nth-child(even) {
+background-color: #FFFFFF;
+}
+
+
+.right-side th {
+background-color:#CC6600;
+color:#FFFFFF;
+}
+
+h1 {
+color: #CC6600;
+}
+
+body{
+background-color:#FFEDCA;
+}
+
+</style>
+<body>
+	<div class="left-side">
+    	<img src="23.png" style="width:250px;height:250px;">
+    </div>
+    <h1>Các món ngon Hà Nội</h1>
+	<table class="right-side">
+		<tr>
+			<th>STT</th>
+			<th><span>Tên món ăn</span></th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><span>Bánh cuốn Thanh Trì</span></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><span>Xôi Hà Nội</span></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><span>Chả cá Lã Vọng</span></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><span>Cháo Cóc</span></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><span>Bánh Gai Ninh Giang</span></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td><span>Bún thang Hà Nội</span></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td><span>Canh Lằng</span></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td><span>Vịt quay lạng Sơn</span></td>
+		</tr>
+	</table>
+</body>
+</html>
