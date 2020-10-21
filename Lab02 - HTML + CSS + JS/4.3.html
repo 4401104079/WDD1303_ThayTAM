@@ -1,0 +1,76 @@
+﻿<html>
+<head>
+    <title>Lab04.1 - HTML + CSS + JS</title>
+</head>
+<style>
+    div {
+        margin: 20%;
+    }
+
+    h1 {
+        color: #cc6600;
+        background-color:gold;
+    }
+
+    table {
+        background-color:peachpuff;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <form ="dien-tich-hinh-chu-nhat">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <h1>DIỆN TÍCH và CHU VI HÌNH TRÒN</h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <body>
+                        <tr>
+                            <td>
+                                Bán kính:
+                            </td>
+                            <td>
+                                <input type="number" id="ban-kinh" placeholder="Nhập bán kính">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Diện tích:
+                            </td>
+                            <td>
+                                <input type="number" id="dien-tich" placeholder="Diện tích hình tròn" disabled="disabled" style="background-color:pink">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Chu vi:
+                            </td>
+                            <td>
+                                <input type="number" id="chu-vi" placeholder="Chu vi hình tròn" disabled="disabled" style="background-color:pink">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:center">
+                                <input type="button" onClick="Tinh()" value="Tinh">
+                            </td>
+                        </tr>
+                    </body>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+		function Tinh(){
+            var bankinh = document.getElementById('ban-kinh');
+            var dientich = bankinh.value * bankinh.value * 3.14;
+            var chuvi = 2 * 3.14 * bankinh.value;
+            document.getElementById("dien-tich").value = dientich;
+            document.getElementById("chu-vi").value = chuvi;
+		}
+    </script>
+</body>
+</html>

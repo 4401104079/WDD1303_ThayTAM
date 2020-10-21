@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Lab04.1 - HTML + CSS + JS</title>
+</head>
+<style>
+	div{
+		margin: 20% ;
+	}
+	h1{
+	color: #cc6600;
+	background-color:#ffb380;
+	}
+	table{
+	background-color:#ffcc99;
+	}
+	
+</style>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<form = "Dinh-mau-chu-mau-nen">
+				<table>
+					<thead>
+						<tr>
+							<th colspan="2">
+								<h1>ĐỊNH MÀU CHỮ - MÀU NỀN</h1>
+							</th>
+						</tr>
+					</thead>
+					<body>
+						<tr>
+							<td>
+								Nội dung:
+							</td>
+							<td>
+								<input type="text" id="noi-dung" placeholder="Nhập nội dung">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Màu nền:
+							</td>
+							<td>
+								<input type="text" id="mau-nen" placeholder="Nhập màu nền">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Màu chữ
+							</td>
+							<td>
+								<input type="text" id="mau-chu" placeholder="Nhập màu chữ">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center">
+								<input type="button" onClick="Ketqua()" value="Xem kết quả">
+							</td>
+						</tr>
+
+					</body>
+				</table>
+			</form>
+			<p style="color:red;text-align:center">
+					Kết quả sau khi nhấn <i><b>Xem kết quả</b></i>
+			</p>
+			
+			<p id="ket-qua" style="text-align:center"></p>
+	
+		</div>
+	</div>
+	<script type="text/javascript">
+		function Ketqua(){
+			var nd = document.getElementById('noi-dung');
+			var mn = document.getElementById('mau-nen');
+			var mc = document.getElementById('mau-chu');
+			document.getElementById('ket-qua').innerHTML = nd.value;
+			document.getElementById('ket-qua').style.backgroundColor = mn.value;
+			document.getElementById('ket-qua').style.color = mc.value;
+		}
+	</script>
+</body>
+</html>
