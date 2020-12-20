@@ -2,7 +2,7 @@
 	
 	include('db_connect.php');
 	
-	$sql = "SELECT * FROM products WHERE new='1'";
+	$sql = "SELECT * FROM products WHERE new='1' ORDER BY product_id DESC";
 	
 	$result = mysqli_query($conn, $sql);
 	
