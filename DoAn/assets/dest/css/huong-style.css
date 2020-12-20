@@ -1,0 +1,24 @@
+.fixNav{
+  width: 100%;
+  top: 0; 
+  left: 0; 
+  z-index: 100000000;
+}
+.cart-body{
+	z-index:999;
+}
+.inner-header {
+	background-image: url(https://ipt.imgix.net/204141/x/0/nature-sky-night-star-milky-way-cosmos-1225110-pxhere-com.jpg?w=860&h=480&fit=crop&auto=format%2C%20compress&dpr=2&ixlib=react-8.6.4);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top:2px solid snow;
+	border-bottom:2px solid snow;
+}
+.inner-title, .beta-breadcrumb, .beta-breadcrumb a {
+	color: snow
+}
+.main-menu>ul.l-inline> li> a{
+	color: #fff;
+	padding: 10px 35px
+}
